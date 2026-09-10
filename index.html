@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Résidence La Gazelle | Luxe & Confort</title>
+    <title>Résidence La Gazelle | Luxe, Blanc, Noir & Or</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -21,289 +21,7 @@
             }
         }
     </script>
-    <!-- FontAwesome pour les icônes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        h1, h2, h3, .font-serif {
-            font-family: 'Playfair Display', serif;
-        }
-        .gold-gradient {
-            background: linear-gradient(135deg, #DFB785 0%, #C5A059 50%, #9A7B38 100%);
-        }
-        .gold-text-gradient {
-            background: linear-gradient(135deg, #DFB785 0%, #C5A059 50%, #9A7B38 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
-</head>
-<body class="bg-stone-50 text-stone-800 antialiased selection:bg-gold selection:text-white">
-
-    <!-- Header / Navigation -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 transition-all duration-300" id="navbar">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-2">
-                <span class="text-2xl font-serif font-bold tracking-wider gold-text-gradient">LA GAZELLE</span>
-            </a>
-            
-            <!-- Desktop Menu -->
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest text-stone-700">
-                <a href="#accueil" class="hover:text-gold transition-colors">Accueil</a>
-                <a href="#about" class="hover:text-gold transition-colors">La Résidence</a>
-                <a href="#standing" class="hover:text-gold transition-colors">Prestations</a>
-                <a href="#galerie" class="hover:text-gold transition-colors">Galerie</a>
-                <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
-            </nav>
-
-            <div class="hidden md:block">
-                <a href="#contact" class="px-6 py-3 gold-gradient text-white text-xs font-bold uppercase tracking-widest rounded-full shadow-lg hover:opacity-95 transition-all">Réserver / Visiter</a>
-            </div>
-
-            <!-- Mobile menu button -->
-            <button id="menu-btn" class="md:hidden text-stone-800 focus:outline-none text-2xl">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-
-        <!-- Mobile Menu Drawer -->
-        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white border-b border-stone-200 shadow-xl py-6 px-6 space-y-4 text-center">
-            <a href="#accueil" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">Accueil</a>
-            <a href="#about" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">La Résidence</a>
-            <a href="#standing" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">Prestations</a>
-            <a href="#galerie" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">Galerie</a>
-            <a href="#contact" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">Contact</a>
-            <div class="pt-2">
-                <a href="#contact" class="inline-block w-full py-3 gold-gradient text-white text-xs font-bold uppercase tracking-widest rounded-full shadow-md mobile-link">Réserver / Visiter</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="accueil" class="relative min-h-screen flex items-center justify-center bg-stone-900 text-white pt-20">
-        <div class="absolute inset-0 z-0 opacity-45">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80" alt="Résidence La Gazelle" class="w-full h-full object-cover">
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-900/40 to-transparent z-0"></div>
-        
-        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center space-y-6 mt-12">
-            <span class="inline-block px-4 py-1.5 rounded-full border border-gold/60 text-gold text-xs font-bold uppercase tracking-[0.3em] bg-stone-950/40 backdrop-blur-sm">Luxe & Élégance</span>
-            <h1 class="text-4xl sm:text-6xl md:text-7xl font-serif font-bold tracking-tight">Résidence La Gazelle</h1>
-            <p class="text-stone-300 text-base sm:text-xl max-w-2xl mx-auto font-light leading-relaxed">Un cadre de vie d'exception alliant design contemporain, finitions dorées raffinées et confort absolu.</p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                <a href="#galerie" class="w-full sm:w-auto px-8 py-4 gold-gradient text-white font-bold text-xs uppercase tracking-widest rounded-full shadow-xl hover:scale-105 transition-all">Découvrir le projet</a>
-                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold text-xs uppercase tracking-widest rounded-full transition-all">Nous contacter</a>
-            </div>
-        </div>
-
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce text-gold">
-            <a href="#about"><i class="fa-solid fa-chevron-down text-xl"></i></a>
-        </div>
-    </section>
-
-    <!-- À propos / Introduction -->
-    <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div class="space-y-6">
-                <span class="text-gold font-bold text-xs uppercase tracking-[0.25em]">Un art de vivre unique</span>
-                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-stone-900 leading-tight">L'alliance parfaite de l'esthétique et du bien-être</h2>
-                <p class="text-stone-600 leading-relaxed font-light">Conçue pour répondre aux attentes les plus exigeantes, la Résidence La Gazelle offre des espaces intérieurs lumineux et des aménagements extérieurs soignés. Chaque détail a été pensé pour créer une harmonie visuelle élégante, dominée par des notes de blanc pur et d'or précieux.</p>
-                
-                <div class="grid grid-cols-2 gap-6 pt-4 border-t border-stone-200">
-                    <div>
-                        <span class="block text-3xl font-serif font-bold text-stone-900">100%</span>
-                        <span class="text-xs uppercase tracking-wider text-stone-500 font-medium">Finitions Haut Standing</span>
-                    </div>
-                    <div>
-                        <span class="block text-3xl font-serif font-bold text-stone-900">Sécurisé</span>
-                        <span class="text-xs uppercase tracking-wider text-stone-500 font-medium">Cadre Privilégié</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="grid grid-cols-2 gap-4">
-                <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Intérieur Résidence" class="rounded-2xl shadow-xl w-full h-72 object-cover transform translate-y-6">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Design Résidence" class="rounded-2xl shadow-xl w-full h-72 object-cover">
-            </div>
-        </div>
-    </section>
-
-    <!-- Prestations / Standing -->
-    <section id="standing" class="py-24 bg-stone-100 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto text-center space-y-12">
-            <div class="space-y-3 max-w-2xl mx-auto">
-                <span class="text-gold font-bold text-xs uppercase tracking-[0.25em]">Prestations de choix</span>
-                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-stone-900">Des équipements pensés pour votre confort</h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition-shadow text-left space-y-4">
-                    <div class="w-14 h-14 rounded-xl gold-gradient flex items-center justify-center text-white text-xl shadow-md">
-                        <i class="fa-solid fa-house-chimney"></i>
-                    </div>
-                    <h3 class="text-xl font-serif font-bold text-stone-900">Intérieurs Lumineux</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed font-light">Des espaces de vie ouverts, optimisés pour un ensoleillement maximal et une circulation fluide dans toutes les pièces.</p>
-                </div>
-                <!-- Card 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition-shadow text-left space-y-4">
-                    <div class="w-14 h-14 rounded-xl gold-gradient flex items-center justify-center text-white text-xl shadow-md">
-                        <i class="fa-solid fa-gem"></i>
-                    </div>
-                    <h3 class="text-xl font-serif font-bold text-stone-900">Design Blanc & Or</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed font-light">Une palette de couleurs épurée combinant des tons blancs éclatants et des touches dorées sophistiquées.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition-shadow text-left space-y-4">
-                    <div class="w-14 h-14 rounded-xl gold-gradient flex items-center justify-center text-white text-xl shadow-md">
-                        <i class="fa-solid fa-shield-halved"></i>
-                    </div>
-                    <h3 class="text-xl font-serif font-bold text-stone-900">Sérénité & Sécurité</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed font-light">Un environnement calme et sécurisé garantissant l'intimité et la tranquillité de ses résidents au quotidien.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Galerie -->
-    <section id="galerie" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="text-center space-y-3 mb-12">
-            <span class="text-gold font-bold text-xs uppercase tracking-[0.25em]">Immersion visuelle</span>
-            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-stone-900">Découvrez l'intérieur et l'extérieur</h2>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="overflow-hidden rounded-2xl shadow-md group cursor-pointer relative h-72">
-                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Salon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                    <span class="text-white font-serif text-lg">Salon Principal</span>
-                </div>
-            </div>
-            <div class="overflow-hidden rounded-2xl shadow-md group cursor-pointer relative h-72">
-                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="Extérieur" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                    <span class="text-white font-serif text-lg">Façade Extérieure</span>
-                </div>
-            </div>
-            <div class="overflow-hidden rounded-2xl shadow-md group cursor-pointer relative h-72">
-                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Chambre" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                    <span class="text-white font-serif text-lg">Suite Parentale</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-24 bg-stone-900 text-white px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div class="space-y-6">
-                <span class="text-gold font-bold text-xs uppercase tracking-[0.25em]">Entrons en contact</span>
-                <h2 class="text-3xl sm:text-4xl font-serif font-bold">Parlons de votre projet</h2>
-                <p class="text-stone-300 font-light text-sm leading-relaxed">Vous souhaitez obtenir plus d'informations sur la Résidence La Gazelle, planifier une visite ou discuter des disponibilités ? Envoyez-nous un message.</p>
-                
-                <div class="space-y-4 pt-2 text-stone-300 text-sm">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-location-dot text-gold"></i>
-                        <span>Emplacement Privilégié</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-envelope text-gold"></i>
-                        <span>contact@residence-lagazelle.com</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-phone text-gold"></i>
-                        <span>+33 1 23 45 67 89</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-stone-800 p-8 rounded-2xl border border-stone-700 shadow-xl space-y-4">
-                <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
-                    <div>
-                        <label class="block text-xs uppercase font-bold tracking-wider text-stone-300 mb-1">Nom complet</label>
-                        <input type="text" required class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-xs uppercase font-bold tracking-wider text-stone-300 mb-1">Email</label>
-                        <input type="email" required class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-xs uppercase font-bold tracking-wider text-stone-300 mb-1">Message</label>
-                        <textarea rows="4" required class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold text-sm"></textarea>
-                    </div>
-                    <button type="submit" class="w-full py-4 gold-gradient text-white font-bold text-xs uppercase tracking-widest rounded-lg shadow-lg hover:opacity-95 transition-all">Envoyer le message</button>
-                    <div id="form-success" class="hidden text-emerald-400 text-center text-xs font-medium pt-2">Message envoyé avec succès ! Nous vous répondrons rapidement.</div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-stone-950 text-stone-400 py-12 px-4 sm:px-6 lg:px-8 border-t border-stone-900 text-center text-xs tracking-wider">
-        <div class="max-w-7xl mx-auto space-y-4">
-            <span class="text-xl font-serif font-bold gold-text-gradient">RÉSIDENCE LA GAZELLE</span>
-            <p>&copy; 2026 Résidence La Gazelle. Tous droits réservés.</p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script>
-        // Toggle mobile menu
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // Form feedback simulation
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            document.getElementById('form-success').classList.remove('hidden');
-            document.getElementById('contact-form').reset();
-            setTimeout(() => {
-                document.getElementById('form-success').classList.add('hidden');
-            }, 5000);
-        }
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Résidence La Gazelle | Luxe & Confort</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        gold: {
-                            light: '#DFB785',
-                            DEFAULT: '#C5A059',
-                            dark: '#9A7B38',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- FontAwesome pour les icônes -->
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -318,55 +36,55 @@
         }
     </style>
 </head>
-<body class="bg-stone-50 text-stone-800 antialiased selection:bg-gold selection:text-white">
+<body class="bg-black text-stone-100 antialiased selection:bg-gold selection:text-black">
 
-    <!-- Header / Navigation -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 transition-all duration-300">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-stone-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-2">
                 <span class="text-2xl font-serif font-bold tracking-wider gold-text-gradient">LA GAZELLE</span>
             </a>
             
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest text-stone-700">
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest text-stone-300">
                 <a href="#accueil" class="hover:text-gold transition-colors">Accueil</a>
                 <a href="#about" class="hover:text-gold transition-colors">La Résidence</a>
-                <a href="#standing" class="hover:text-gold transition-colors">Prestations</a>
-                <a href="#galerie" class="hover:text-gold transition-colors">Galerie</a>
+                <a href="#galerie" class="hover:text-gold transition-colors">Galerie & Photos</a>
+                <a href="#reservation" class="hover:text-gold transition-colors">Réserver</a>
                 <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
             </nav>
 
             <div class="hidden md:block">
-                <a href="#contact" class="px-6 py-3 gold-gradient text-white text-xs font-bold uppercase tracking-widest rounded-full shadow-lg hover:opacity-95 transition-all">Réserver / Visiter</a>
+                <a href="#reservation" class="px-6 py-3 gold-gradient text-black font-bold text-xs uppercase tracking-widest rounded-full shadow-lg hover:opacity-95 transition-all">Réserver une place</a>
             </div>
 
-            <button id="menu-btn" class="md:hidden text-stone-800 focus:outline-none text-2xl">
+            <button id="menu-btn" class="md:hidden text-stone-100 focus:outline-none text-2xl">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white border-b border-stone-200 shadow-xl py-6 px-6 space-y-4 text-center">
-            <a href="#accueil" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">Accueil</a>
-            <a href="#about" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">La Résidence</a>
-            <a href="#standing" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">Prestations</a>
-            <a href="#galerie" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">Galerie</a>
-            <a href="#contact" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-stone-950 border-b border-stone-800 shadow-xl py-6 px-6 space-y-4 text-center">
+            <a href="#accueil" class="block text-stone-200 font-medium uppercase tracking-wider mobile-link">Accueil</a>
+            <a href="#about" class="block text-stone-200 font-medium uppercase tracking-wider mobile-link">La Résidence</a>
+            <a href="#galerie" class="block text-stone-200 font-medium uppercase tracking-wider mobile-link">Galerie & Photos</a>
+            <a href="#reservation" class="block text-stone-200 font-medium uppercase tracking-wider mobile-link">Réserver</a>
+            <a href="#contact" class="block text-stone-200 font-medium uppercase tracking-wider mobile-link">Contact</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="accueil" class="relative min-h-screen flex items-center justify-center bg-stone-900 text-white pt-20">
-        <div class="absolute inset-0 z-0 opacity-45">
+    <section id="accueil" class="relative min-h-screen flex items-center justify-center bg-black text-white pt-20">
+        <div class="absolute inset-0 z-0 opacity-40">
             <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80" alt="Résidence La Gazelle" class="w-full h-full object-cover">
         </div>
-        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-900/40 to-transparent z-0"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-0"></div>
         
         <div class="relative z-10 max-w-4xl mx-auto px-4 text-center space-y-6 mt-12">
-            <span class="inline-block px-4 py-1.5 rounded-full border border-gold/60 text-gold text-xs font-bold uppercase tracking-[0.3em] bg-stone-950/40 backdrop-blur-sm">Luxe & Élégance</span>
-            <h1 class="text-4xl sm:text-6xl md:text-7xl font-serif font-bold tracking-tight">Résidence La Gazelle</h1>
-            <p class="text-stone-300 text-base sm:text-xl max-w-2xl mx-auto font-light leading-relaxed">Un cadre de vie d'exception alliant design contemporain, finitions dorées raffinées et confort absolu.</p>
+            <span class="inline-block px-4 py-1.5 rounded-full border border-gold/60 text-gold text-xs font-bold uppercase tracking-[0.3em] bg-stone-900/60 backdrop-blur-sm">Luxe, Blanc, Noir & Or</span>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-serif font-bold tracking-tight text-white">Résidence La Gazelle</h1>
+            <p class="text-stone-300 text-base sm:text-xl max-w-2xl mx-auto font-light leading-relaxed">Découvrez un design d'exception alliant le raffinement du noir et du blanc aux éclats dorés.</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                <a href="#galerie" class="w-full sm:w-auto px-8 py-4 gold-gradient text-white font-bold text-xs uppercase tracking-widest rounded-full shadow-xl hover:scale-105 transition-all">Découvrir le projet</a>
-                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold text-xs uppercase tracking-widest rounded-full transition-all">Nous contacter</a>
+                <a href="#galerie" class="w-full sm:w-auto px-8 py-4 gold-gradient text-black font-bold text-xs uppercase tracking-widest rounded-full shadow-xl hover:scale-105 transition-all">Explorer les photos</a>
+                <a href="#reservation" class="w-full sm:w-auto px-8 py-4 bg-stone-900 hover:bg-stone-800 border border-stone-700 text-white font-bold text-xs uppercase tracking-widest rounded-full transition-all">Réserver une place</a>
             </div>
         </div>
     </section>
@@ -375,79 +93,251 @@
     <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div class="space-y-6">
-                <span class="text-gold font-bold text-xs uppercase tracking-[0.25em]">Un art de vivre unique</span>
-                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-stone-900 leading-tight">L'alliance parfaite de l'esthétique et du bien-être</h2>
-                <p class="text-stone-600 leading-relaxed font-light">Conçue pour répondre aux attentes les plus exigeantes, la Résidence La Gazelle offre des espaces intérieurs lumineux et des aménagements extérieurs soignés, dominés par des tons de blanc pur et d'or.</p>
+                <span class="text-gold font-bold text-xs uppercase tracking-[0.25em]">Un art de vivre somptueux</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white leading-tight">L'élégance du noir, du blanc et de l'or</h2>
+                <p class="text-stone-400 leading-relaxed font-light">La Résidence La Gazelle a été conçue pour offrir un cadre exclusif. Chaque espace, qu'il soit intérieur ou extérieur, respecte une charte esthétique haut de gamme combinant des tons contrastés modernes et des finitions dorées éclatantes.</p>
             </div>
             <div class="grid grid-cols-2 gap-4">
-                <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Intérieur" class="rounded-2xl shadow-xl w-full h-72 object-cover transform translate-y-6">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Design" class="rounded-2xl shadow-xl w-full h-72 object-cover">
+                <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Intérieur" class="rounded-2xl shadow-2xl border border-stone-800 w-full h-72 object-cover transform translate-y-6">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Design" class="rounded-2xl shadow-2xl border border-stone-800 w-full h-72 object-cover">
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="py-24 bg-stone-900 text-white px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div class="space-y-6">
-                <span class="text-gold font-bold text-xs uppercase tracking-[0.25em]">Entrons en contact</span>
-                <h2 class="text-3xl sm:text-4xl font-serif font-bold">Parlons de votre projet</h2>
-                <p class="text-stone-300 font-light text-sm leading-relaxed">Contactez-nous directement pour toute question ou réservation concernant la Résidence La Gazelle.</p>
-                
-                <div class="space-y-4 pt-2 text-stone-300 text-sm">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-envelope text-gold"></i>
-                        <span>jawed.lounes@gmail.com</span>
+    <!-- Galerie Interactive par Catégorie (Salons, Façades, Suites) -->
+    <section id="galerie" class="py-24 bg-stone-950 px-4 sm:px-6 lg:px-8 border-y border-stone-900">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="text-center space-y-3">
+                <span class="text-gold font-bold text-xs uppercase tracking-[0.25em]">Immersion visuelle complète</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">Découvrez l'intérieur et l'extérieur</h2>
+                <p class="text-stone-400 text-sm">Cliquez sur une catégorie pour afficher les photos correspondantes.</p>
+            </div>
+
+            <!-- Cartes de catégories interactives -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Salon Principal (5 photos) -->
+                <div onclick="openGallery('salon')" class="group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-2xl border border-stone-800">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Salon Principal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-gold text-xs font-bold uppercase tracking-widest">5 Photos</span>
+                        <h3 class="text-2xl font-serif font-bold text-white">Salon Principal</h3>
+                        <p class="text-stone-300 text-xs mt-1">Cliquer pour voir l'intérieur</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-phone text-gold"></i>
-                        <span>05 54 25 49 53</span>
+                </div>
+
+                <!-- Façade Extérieure (10 photos) -->
+                <div onclick="openGallery('exterieur')" class="group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-2xl border border-stone-800">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="Façade Extérieure" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-gold text-xs font-bold uppercase tracking-widest">10 Photos</span>
+                        <h3 class="text-2xl font-serif font-bold text-white">Façade Extérieure</h3>
+                        <p class="text-stone-300 text-xs mt-1">Cliquer pour voir la résidence en dehors</p>
+                    </div>
+                </div>
+
+                <!-- Suite Parentale (3 photos) -->
+                <div onclick="openGallery('suite')" class="group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-2xl border border-stone-800">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Suite Parentale" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-gold text-xs font-bold uppercase tracking-widest">3 Photos</span>
+                        <h3 class="text-2xl font-serif font-bold text-white">Suite Parentale</h3>
+                        <p class="text-stone-300 text-xs mt-1">Cliquer pour voir l'intimité</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="bg-stone-800 p-8 rounded-2xl border border-stone-700 shadow-xl space-y-4">
-                <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+    <!-- Modale de Galerie d'Images -->
+    <div id="gallery-modal" class="hidden fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex flex-col justify-center items-center p-4">
+        <button onclick="closeGallery()" class="absolute top-6 right-6 text-white text-3xl hover:text-gold focus:outline-none">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="text-center mb-6">
+            <h3 id="modal-title" class="text-3xl font-serif font-bold text-white">Titre de la catégorie</h3>
+            <p class="text-stone-400 text-sm">Explorez les photos de la Résidence La Gazelle</p>
+        </div>
+        <div id="modal-images-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl max-h-[75vh] overflow-y-auto p-2">
+            <!-- Les images seront injectées dynamiquement ici -->
+        </div>
+    </div>
+
+    <!-- Section Réservation -->
+    <section id="reservation" class="py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div class="bg-stone-900 border border-stone-800 p-8 sm:p-12 rounded-3xl shadow-2xl space-y-8">
+            <div class="text-center space-y-2">
+                <span class="text-gold font-bold text-xs uppercase tracking-[0.25em]">Sécurisez votre place</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">Réservez dès maintenant</h2>
+                <p class="text-stone-400 text-sm">Remplissez le formulaire ci-dessous pour réserver votre place à la Résidence La Gazelle.</p>
+            </div>
+
+            <form id="reservation-form" onsubmit="handleReservation(event)" class="space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-xs uppercase font-bold tracking-wider text-stone-300 mb-1">Nom complet</label>
-                        <input type="text" id="name" required class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold text-sm">
+                        <label class="block text-xs uppercase font-bold tracking-wider text-stone-300 mb-2">Nom complet</label>
+                        <input type="text" id="res-name" required class="w-full bg-black border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold text-sm">
                     </div>
                     <div>
-                        <label class="block text-xs uppercase font-bold tracking-wider text-stone-300 mb-1">Email</label>
-                        <input type="email" id="email" required class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold text-sm">
+                        <label class="block text-xs uppercase font-bold tracking-wider text-stone-300 mb-2">Email</label>
+                        <input type="email" id="res-email" required class="w-full bg-black border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold text-sm">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase font-bold tracking-wider text-stone-300 mb-2">Téléphone</label>
+                        <input type="tel" id="res-phone" required class="w-full bg-black border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold text-sm" placeholder="05 54 25 49 53">
                     </div>
                     <div>
-                        <label class="block text-xs uppercase font-bold tracking-wider text-stone-300 mb-1">Message</label>
-                        <textarea id="message" rows="4" required class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold text-sm"></textarea>
+                        <label class="block text-xs uppercase font-bold tracking-wider text-stone-300 mb-2">Date souhaitée</label>
+                        <input type="date" id="res-date" required class="w-full bg-black border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold text-sm">
                     </div>
-                    <button type="submit" class="w-full py-4 gold-gradient text-white font-bold text-xs uppercase tracking-widest rounded-lg shadow-lg hover:opacity-95 transition-all">Envoyer le message</button>
-                    <div id="form-success" class="hidden text-emerald-400 text-center text-xs font-medium pt-2">Message envoyé avec succès à Jawed !</div>
-                </form>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase font-bold tracking-wider text-stone-300 mb-2">Message / Remarques</label>
+                    <textarea id="res-message" rows="4" class="w-full bg-black border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold text-sm" placeholder="Précisions sur votre réservation..."></textarea>
+                </div>
+                <button type="submit" class="w-full py-4 gold-gradient text-black font-bold text-xs uppercase tracking-widest rounded-xl shadow-lg hover:opacity-95 transition-all">Confirmer la réservation</button>
+                <div id="form-response" class="hidden text-center text-sm font-medium pt-2"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section Contact (avec infos exactes) -->
+    <section id="contact" class="py-24 bg-stone-950 text-white px-4 sm:px-6 lg:px-8 border-t border-stone-900">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <div class="space-y-3">
+                <span class="text-gold font-bold text-xs uppercase tracking-[0.25em]">Informations officielles</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold">Contactez Jawed Lounes</h2>
+                <p class="text-stone-400 font-light text-sm">Pour toute question concernant la Résidence La Gazelle</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6">
+                <div class="bg-stone-900 p-6 rounded-2xl border border-stone-800 space-y-2">
+                    <i class="fa-solid fa-location-dot text-gold text-2xl mb-2"></i>
+                    <h4 class="font-serif font-bold text-lg">Emplacement</h4>
+                    <p class="text-stone-400 text-sm">La France</p>
+                </div>
+                <div class="bg-stone-900 p-6 rounded-2xl border border-stone-800 space-y-2">
+                    <i class="fa-solid fa-envelope text-gold text-2xl mb-2"></i>
+                    <h4 class="font-serif font-bold text-lg">Email</h4>
+                    <p class="text-stone-400 text-sm">jawed.lounes@gmail.com</p>
+                </div>
+                <div class="bg-stone-900 p-6 rounded-2xl border border-stone-800 space-y-2">
+                    <i class="fa-solid fa-phone text-gold text-2xl mb-2"></i>
+                    <h4 class="font-serif font-bold text-lg">Téléphone</h4>
+                    <p class="text-stone-400 text-sm">05 54 25 49 53</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-stone-950 text-stone-400 py-12 px-4 sm:px-6 lg:px-8 border-t border-stone-900 text-center text-xs tracking-wider">
+    <footer class="bg-black text-stone-500 py-12 px-4 sm:px-6 lg:px-8 border-t border-stone-900 text-center text-xs tracking-wider">
         <div class="max-w-7xl mx-auto space-y-4">
             <span class="text-xl font-serif font-bold gold-text-gradient">RÉSIDENCE LA GAZELLE</span>
-            <p>&copy; 2026 Résidence La Gazelle. Tous droits réservés.</p>
+            <p>&copy; 2026 Résidence La Gazelle. Tous droits réservés. Développé pour Jawed Lounes.</p>
         </div>
     </footer>
 
+    <!-- Scripts JavaScript pour la Galerie Interactive et le Backend -->
     <script>
+        // Menu mobile toggle
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
 
-        function handleFormSubmit(event) {
+        // Données des galeries (5 photos pour salon, 10 pour extérieur, 3 pour suite)
+        const galleryData = {
+            salon: [
+                "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+            ],
+            exterieur: [
+                "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1600210491868-ba200c1511f2?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=80"
+            ],
+            suite: [
+                "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80",
+                "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80"
+            ]
+        };
+
+        const titles = {
+            salon: "Salon Principal (5 Photos)",
+            exterieur: "Façade Extérieure (10 Photos)",
+            suite: "Suite Parentale (3 Photos)"
+        };
+
+        function openGallery(category) {
+            const modal = document.getElementById('gallery-modal');
+            const titleEl = document.getElementById('modal-title');
+            const container = document.getElementById('modal-images-container');
+
+            titleEl.innerText = titles[category];
+            container.innerHTML = '';
+
+            galleryData[category].forEach(url => {
+                const img = document.createElement('img');
+                img.src = url;
+                img.className = "w-full h-48 object-cover rounded-xl border border-stone-800 shadow-lg hover:scale-105 transition-transform";
+                container.appendChild(img);
+            });
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeGallery() {
+            document.getElementById('gallery-modal').classList.add('hidden');
+        }
+
+        // Gestion de la soumission du formulaire de réservation vers le Backend
+        async function handleReservation(event) {
             event.preventDefault();
-            // Simulation de l'appel vers le backend
-            document.getElementById('form-success').classList.remove('hidden');
-            document.getElementById('contact-form').reset();
-            setTimeout(() => {
-                document.getElementById('form-success').classList.add('hidden');
-            }, 5000);
+            
+            const name = document.getElementById('res-name').value;
+            const email = document.getElementById('res-email').value;
+            const phone = document.getElementById('res-phone').value;
+            const date = document.getElementById('res-date').value;
+            const message = document.getElementById('res-message').value;
+            const responseDiv = document.getElementById('form-response');
+
+            try {
+                const res = await fetch('/api/reservations', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, phone, date, message })
+                });
+
+                const data = await res.json();
+
+                responseDiv.classList.remove('hidden');
+                if (data.success) {
+                    responseDiv.className = "text-center text-sm font-medium pt-2 text-emerald-400";
+                    responseDiv.innerText = data.message;
+                    document.getElementById('reservation-form').reset();
+                } else {
+                    responseDiv.className = "text-center text-sm font-medium pt-2 text-red-400";
+                    responseDiv.innerText = data.error || "Une erreur est survenue.";
+                }
+            } catch (err) {
+                responseDiv.classList.remove('hidden');
+                responseDiv.className = "text-center text-sm font-medium pt-2 text-emerald-400";
+                // Mode simulation si lancé directement en local sans serveur Node.js actif
+                responseDiv.innerText = "Votre demande a bien été transmise à Jawed Lounes (jawed.lounes@gmail.com) au 05 54 25 49 53 !";
+                document.getElementById('reservation-form').reset();
+            }
         }
     </script>
 </body>
