@@ -280,3 +280,175 @@
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résidence La Gazelle | Luxe & Confort</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#DFB785',
+                            DEFAULT: '#C5A059',
+                            dark: '#9A7B38',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        .gold-gradient { background: linear-gradient(135deg, #DFB785 0%, #C5A059 50%, #9A7B38 100%); }
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #DFB785 0%, #C5A059 50%, #9A7B38 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased selection:bg-gold selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <span class="text-2xl font-serif font-bold tracking-wider gold-text-gradient">LA GAZELLE</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest text-stone-700">
+                <a href="#accueil" class="hover:text-gold transition-colors">Accueil</a>
+                <a href="#about" class="hover:text-gold transition-colors">La Résidence</a>
+                <a href="#standing" class="hover:text-gold transition-colors">Prestations</a>
+                <a href="#galerie" class="hover:text-gold transition-colors">Galerie</a>
+                <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="#contact" class="px-6 py-3 gold-gradient text-white text-xs font-bold uppercase tracking-widest rounded-full shadow-lg hover:opacity-95 transition-all">Réserver / Visiter</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-stone-800 focus:outline-none text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white border-b border-stone-200 shadow-xl py-6 px-6 space-y-4 text-center">
+            <a href="#accueil" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">Accueil</a>
+            <a href="#about" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">La Résidence</a>
+            <a href="#standing" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">Prestations</a>
+            <a href="#galerie" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">Galerie</a>
+            <a href="#contact" class="block text-stone-800 font-medium uppercase tracking-wider mobile-link">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="relative min-h-screen flex items-center justify-center bg-stone-900 text-white pt-20">
+        <div class="absolute inset-0 z-0 opacity-45">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80" alt="Résidence La Gazelle" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-900/40 to-transparent z-0"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center space-y-6 mt-12">
+            <span class="inline-block px-4 py-1.5 rounded-full border border-gold/60 text-gold text-xs font-bold uppercase tracking-[0.3em] bg-stone-950/40 backdrop-blur-sm">Luxe & Élégance</span>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-serif font-bold tracking-tight">Résidence La Gazelle</h1>
+            <p class="text-stone-300 text-base sm:text-xl max-w-2xl mx-auto font-light leading-relaxed">Un cadre de vie d'exception alliant design contemporain, finitions dorées raffinées et confort absolu.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#galerie" class="w-full sm:w-auto px-8 py-4 gold-gradient text-white font-bold text-xs uppercase tracking-widest rounded-full shadow-xl hover:scale-105 transition-all">Découvrir le projet</a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold text-xs uppercase tracking-widest rounded-full transition-all">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="space-y-6">
+                <span class="text-gold font-bold text-xs uppercase tracking-[0.25em]">Un art de vivre unique</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-stone-900 leading-tight">L'alliance parfaite de l'esthétique et du bien-être</h2>
+                <p class="text-stone-600 leading-relaxed font-light">Conçue pour répondre aux attentes les plus exigeantes, la Résidence La Gazelle offre des espaces intérieurs lumineux et des aménagements extérieurs soignés, dominés par des tons de blanc pur et d'or.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Intérieur" class="rounded-2xl shadow-xl w-full h-72 object-cover transform translate-y-6">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Design" class="rounded-2xl shadow-xl w-full h-72 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-stone-900 text-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <span class="text-gold font-bold text-xs uppercase tracking-[0.25em]">Entrons en contact</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold">Parlons de votre projet</h2>
+                <p class="text-stone-300 font-light text-sm leading-relaxed">Contactez-nous directement pour toute question ou réservation concernant la Résidence La Gazelle.</p>
+                
+                <div class="space-y-4 pt-2 text-stone-300 text-sm">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-gold"></i>
+                        <span>jawed.lounes@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-gold"></i>
+                        <span>05 54 25 49 53</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-stone-800 p-8 rounded-2xl border border-stone-700 shadow-xl space-y-4">
+                <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs uppercase font-bold tracking-wider text-stone-300 mb-1">Nom complet</label>
+                        <input type="text" id="name" required class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase font-bold tracking-wider text-stone-300 mb-1">Email</label>
+                        <input type="email" id="email" required class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase font-bold tracking-wider text-stone-300 mb-1">Message</label>
+                        <textarea id="message" rows="4" required class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold text-sm"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 gold-gradient text-white font-bold text-xs uppercase tracking-widest rounded-lg shadow-lg hover:opacity-95 transition-all">Envoyer le message</button>
+                    <div id="form-success" class="hidden text-emerald-400 text-center text-xs font-medium pt-2">Message envoyé avec succès à Jawed !</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 py-12 px-4 sm:px-6 lg:px-8 border-t border-stone-900 text-center text-xs tracking-wider">
+        <div class="max-w-7xl mx-auto space-y-4">
+            <span class="text-xl font-serif font-bold gold-text-gradient">RÉSIDENCE LA GAZELLE</span>
+            <p>&copy; 2026 Résidence La Gazelle. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            // Simulation de l'appel vers le backend
+            document.getElementById('form-success').classList.remove('hidden');
+            document.getElementById('contact-form').reset();
+            setTimeout(() => {
+                document.getElementById('form-success').classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
